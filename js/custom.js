@@ -19,7 +19,7 @@
       "images/carousal/Yala_4.jpg",
       "images/carousal/Yala_3.jpg",
       "images/carousal/Yala_5.jpg",
-    ],  {duration: 1000, fade: 750});
+    ],  {duration: 2000, fade: 750});
     
     // CUSTOM LINK
     $('.smoothscroll').click(function(){
