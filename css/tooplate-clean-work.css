@@ -3,7 +3,7 @@
 Tooplate 2132 Clean Work
 
 https://www.tooplate.com/view/2132-clean-work
-
+hover
 */
 
 
@@ -11,6 +11,8 @@ https://www.tooplate.com/view/2132-clean-work
 /*---------------------------------------
   CUSTOM PROPERTIES ( VARIABLES )             
 -----------------------------------------*/
+
+
 :root {
   --white-color:                  #ffffff;
   --primary-color:                #79AC78;
@@ -166,6 +168,19 @@ strong {
 
 .section-overlay + .container {
   position: relative;
+}
+
+
+/*---------------------------------------
+  DISPLAY PRICE AND TIME AS COLOMN IN WIDE SCREENS             
+-----------------------------------------*/
+@media (min-width: 768px) {
+  .d-flex-lg {
+      flex-direction: column;
+  }
+  .card-font{
+    font-size: 0.85rem;
+  }
 }
 
 
@@ -455,10 +470,6 @@ strong {
   display: inline-block;
 }
 
-.button--atlas:hover > span {
-  opacity: 0;
-}
-
 .marquee {
   position: absolute;
   top: 0;
@@ -467,7 +478,7 @@ strong {
   overflow: hidden;
   pointer-events: none;
 }
-
+/*
 .marquee__inner {
   width: fit-content;
   display: flex;
@@ -479,14 +490,13 @@ strong {
   animation: marquee 1s linear infinite;
   animation-play-state: paused;
   opacity: 0;
-}
+}*/
 
 .button--atlas:hover .marquee__inner {
   animation-play-state: running;
   opacity: 1;
   transition-duration: 0.4s;
 }
-
 .marquee span {
   text-align: center;
   white-space: nowrap;
@@ -1100,7 +1110,6 @@ strong {
 }
 
 
-
 /*---------------------------------------
   PARTNERS              
 -----------------------------------------*/
@@ -1108,6 +1117,8 @@ strong {
   text-align: center;
   padding-top: 25px;
   padding-bottom: 50px;
+  border-bottom: 1px solid #727571;
+  
 }
 
 .partners-section-title {
@@ -1335,7 +1346,6 @@ strong {
   color: var(--white-color);
 }
 
-
 /*---------------------------------------
   SITE FOOTER              
 -----------------------------------------*/
@@ -1345,7 +1355,7 @@ strong {
 }
 
 .site-footer-bottom {
-  border-top: 1px solid #7fbcf0;
+  border-top: 1px solid var(--white-color);
   position: relative;
   z-index: 2;
   margin-top: 50px;
@@ -1371,6 +1381,7 @@ strong {
   color: var(--section-bg-color);
   font-size: var(--copyright-font-size);
   margin-right: 30px;
+  text-align: center;
 }
 
 .site-footer .custom-btn {
@@ -1482,7 +1493,6 @@ strong {
 .button--skoll:hover::before {
   transform: translate3d(0,100%,0);
 }
-
 
 /*---------------------------------------
   RESPONSIVE STYLES               
@@ -1633,4 +1643,3 @@ strong {
     font-size: 20px;
   }
 }
-
