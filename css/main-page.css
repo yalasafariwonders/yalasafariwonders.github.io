@@ -168,7 +168,7 @@ strong {
 -----------------------------------------*/
 @media (min-width: 768px) {
   .d-flex-lg {
-      flex-direction: column;
+      flex-direction: row;
   }
   .card-font{
     font-size: 1 rem;
