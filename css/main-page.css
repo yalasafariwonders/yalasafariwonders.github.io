@@ -166,7 +166,7 @@ strong {
 /*---------------------------------------
   DISPLAY PRICE AND TIME AS COLOMN IN WIDE SCREENS             
 -----------------------------------------*/
-@media (min-width: 768px) {
+@media (min-width: 100px) {
   .d-flex-lg {
       flex-direction: column;
   }
